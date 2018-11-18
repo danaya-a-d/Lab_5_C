@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_5_C", "Lab_5_C\Lab_5_C.csproj", "{8D6D3CC5-6DF1-49A9-B9AF-868A0EB71D32}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D325516D-586A-4413-A62F-135CCC409E4F}"
+	ProjectSection(SolutionItems) = preProject
+		WinAPIClass.cs = WinAPIClass.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
