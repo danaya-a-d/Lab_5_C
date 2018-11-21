@@ -15,36 +15,36 @@ namespace Lab_5_C
     public partial class Form1 : Form
     {
 
-        private System.Windows.Forms.Button btnABORTRETRYIGNORE;
-        private System.Windows.Forms.Button btnYESNOCANCEL;
-        private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Button btnYESNO;
+        private Button btnABORTRETRYIGNORE;
+        private Button btnYESNOCANCEL;
+        private Button btnOK;
+        private Button btnYESNO;
 
-        private System.Windows.Forms.Button btnDo;
-        private System.Windows.Forms.Button btnRe;
-        private System.Windows.Forms.Button btnMi;
-        private System.Windows.Forms.Button btnFa;
-        private System.Windows.Forms.Button btnSol;
-        private System.Windows.Forms.Button btnLya;
-        private System.Windows.Forms.Button btnC;
+        private Button btnDo;
+        private Button btnRe;
+        private Button btnMi;
+        private Button btnFa;
+        private Button btnSol;
+        private Button btnLya;
+        private Button btnC;
 
-        private System.Windows.Forms.Button btnAW_BLEND;
-        private System.Windows.Forms.Button btnHOR_AW_SLIDE;
-        private System.Windows.Forms.Button btnCenter_AW_SLIDE;
+        private Button btnAW_BLEND;
+        private Button btnHOR_AW_SLIDE;
+        private Button btnCenter_AW_SLIDE;
 
-        private System.Windows.Forms.Button btnTurnOff;
-        private System.Windows.Forms.Button btnRestart;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnUserOut;
+        private Button btnTurnOff;
+        private Button btnRestart;
+        private Button btnCancel;
+        private Button btnUserOut;
 
-        private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private Button btnCreate;
+        private SaveFileDialog saveFileDialog1;
 
-        private System.Windows.Forms.MainMenu mainMenu1;
-        private System.Windows.Forms.MenuItem mnuFile;
-        private System.Windows.Forms.MenuItem mnuOpen;
+        private MainMenu mainMenu1;
+        private MenuItem mnuFile;
+        private MenuItem mnuOpen;
         //private AcroPDFLib.AcroPDF axAcroPDF1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private OpenFileDialog openFileDialog1;
 
         public Form1()
         {
@@ -68,7 +68,7 @@ namespace Lab_5_C
         /////////////////////////// Задание 2 /////////////////////////// 
         ///Диалоговые окна. Библиотека user32.dll
 
-        private void btnABORTRETRYIGNORE_Click(object sender, System.EventArgs e)
+        private void btnABORTRETRYIGNORE_Click(object sender, EventArgs e)
         {
             //Текст сообщения
             string text = "Hello World";
@@ -80,14 +80,14 @@ namespace Lab_5_C
 
         }
 
-        private void btnYESNOCANCEL_Click(object sender, System.EventArgs e)
+        private void btnYESNOCANCEL_Click(object sender, EventArgs e)
         {
             string text = "Hello World";
             string title = "From WinApi";
             WinAPIClass2.MessageBox(IntPtr.Zero, text, title, (uint)(WinAPIClass2.MessageBoxType.MB_YESNOCANCEL | WinAPIClass2.MessageBoxType.MB_ICONINFORMATION));
         }
 
-        private void btnOK_Click(object sender, System.EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
             string text = "Hello World";
             string title = "From WinApi";
@@ -96,7 +96,7 @@ namespace Lab_5_C
 
         }
 
-        private void btnYESNO_Click(object sender, System.EventArgs e)
+        private void btnYESNO_Click(object sender, EventArgs e)
         {
             string text = "Hello World";
             string title = "From WinApi";
@@ -109,45 +109,45 @@ namespace Lab_5_C
         /////////////////////////// Задание 3 /////////////////////////// 
         ///Динамик компьютера. Библиотека Kernel32.dll
 
-        private void btnDo_Click(object sender, System.EventArgs e)
+        private void btnDo_Click(object sender, EventArgs e)
         {
             //В скобках - первый параметр частота, второй продолжительность сигнала
             WinAPIClass3.Beep(1000, 100);
         }
 
-        private void btnRe_Click(object sender, System.EventArgs e)
+        private void btnRe_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(3000, 100);
         }
 
-        private void btnMi_Click(object sender, System.EventArgs e)
+        private void btnMi_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(5000, 100);
         }
 
-        private void btnFa_Click(object sender, System.EventArgs e)
+        private void btnFa_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(7000, 100);
         }
 
-        private void btnSol_Click(object sender, System.EventArgs e)
+        private void btnSol_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(9000, 100);
         }
 
-        private void btnLya_Click(object sender, System.EventArgs e)
+        private void btnLya_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(11000, 100);
         }
 
-        private void btnC_Click(object sender, System.EventArgs e)
+        private void btnC_Click(object sender, EventArgs e)
         {
             WinAPIClass3.Beep(13000, 100);
         }
 
         /////////////////////////// Задание 4 /////////////////////////// 
         ///Проявление окна
-        private void btnAW_BLEND_Click(object sender, System.EventArgs e)
+        private void btnAW_BLEND_Click(object sender, EventArgs e)
         {
 
             // Скрываем окно
@@ -161,7 +161,7 @@ namespace Lab_5_C
 
         }
 
-        private void btnHOR_AW_SLIDE_Click(object sender, System.EventArgs e)
+        private void btnHOR_AW_SLIDE_Click(object sender, EventArgs e)
         {
 
             this.Hide();
@@ -171,7 +171,7 @@ namespace Lab_5_C
             this.btnCenter_AW_SLIDE.Invalidate();
         }
 
-        private void btnCenter_AW_SLIDE_Click(object sender, System.EventArgs e)
+        private void btnCenter_AW_SLIDE_Click(object sender, EventArgs e)
         {
             this.Hide();
             WinAPIClass4.AnimateWindow(this, 3000, WinAPIClass4.AnimateWindowFlags.AW_CENTER | WinAPIClass4.AnimateWindowFlags.AW_SLIDE);
@@ -185,22 +185,22 @@ namespace Lab_5_C
         /////////////////////////// Задание 5 /////////////////////////// 
         ///Завершение работы Windows, перезагрузка, выход пользователя из системы
         
-        private void btnCancel_Click(object sender, System.EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnUserOut_Click(object sender, System.EventArgs e)
+        private void btnUserOut_Click(object sender, EventArgs e)
         {
             WinAPIClass5.ExitWindowsEx((uint)WinAPIClass5.ShutdownType.LogOf, "Win Api test");
         }
 
-        private void btnTurnOff_Click(object sender, System.EventArgs e)
+        private void btnTurnOff_Click(object sender, EventArgs e)
         {
             RestartOrShotDown(WinAPIClass5.ShutdownType.Shutdown);
         }
 
-        private void btnRestart_Click(object sender, System.EventArgs e)
+        private void btnRestart_Click(object sender, EventArgs e)
         {
             RestartOrShotDown(WinAPIClass5.ShutdownType.Reboot);
         }
@@ -219,7 +219,7 @@ namespace Lab_5_C
 
         }
 
-        private void btnCancel2_Click(object sender, System.EventArgs e)
+        private void btnCancel2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -229,7 +229,7 @@ namespace Lab_5_C
         /////////////////////////// Задание 8 /////////////////////////// 
         ///Программа для фотографирования экрана. Библиотеки user32.dll и GDI32
 
-        private void btnCreate_Click(object sender, System.EventArgs e)
+        private void btnCreate_Click(object sender, EventArgs e)
         {
 
             SaveFileDialog diag = new SaveFileDialog();
@@ -249,7 +249,7 @@ namespace Lab_5_C
         /////////////////////////// Задание 8 /////////////////////////// 
         ///Программа для фотографирования экрана. Библиотеки user32.dll и GDI32
 
-        private void mnuOpen_Click(object sender, System.EventArgs e)
+        private void mnuOpen_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "Файлы pdf|*.pdf";
             openFileDialog1.ShowDialog();
@@ -444,7 +444,7 @@ namespace Lab_5_C
         /// коде используется перечисление, то его нужно конвертировать
         /// в тип данных int. </param>			
         /// <returns></returns>
-        [DllImportAttribute("user32.dll", EntryPoint = "AnimateWindow", SetLastError = true)]
+        [DllImport("user32.dll", EntryPoint = "AnimateWindow", SetLastError = true)]
         public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
 
         /// <summary>

@@ -100,7 +100,7 @@
             // btnABORTRETRYIGNORE
             // 
             this.btnABORTRETRYIGNORE.BackColor = System.Drawing.SystemColors.Info;
-            this.btnABORTRETRYIGNORE.Location = new System.Drawing.Point(88, 27);
+            this.btnABORTRETRYIGNORE.Location = new System.Drawing.Point(88, 20);
             this.btnABORTRETRYIGNORE.Name = "btnABORTRETRYIGNORE";
             this.btnABORTRETRYIGNORE.Size = new System.Drawing.Size(124, 48);
             this.btnABORTRETRYIGNORE.TabIndex = 2;
@@ -111,7 +111,7 @@
             // btnYESNOCANCEL
             // 
             this.btnYESNOCANCEL.BackColor = System.Drawing.SystemColors.Info;
-            this.btnYESNOCANCEL.Location = new System.Drawing.Point(88, 69);
+            this.btnYESNOCANCEL.Location = new System.Drawing.Point(88, 67);
             this.btnYESNOCANCEL.Name = "btnYESNOCANCEL";
             this.btnYESNOCANCEL.Size = new System.Drawing.Size(124, 48);
             this.btnYESNOCANCEL.TabIndex = 2;
@@ -133,7 +133,7 @@
             // btnYESNO
             // 
             this.btnYESNO.BackColor = System.Drawing.SystemColors.Info;
-            this.btnYESNO.Location = new System.Drawing.Point(88, 159);
+            this.btnYESNO.Location = new System.Drawing.Point(88, 162);
             this.btnYESNO.Name = "btnYESNO";
             this.btnYESNO.Size = new System.Drawing.Size(124, 48);
             this.btnYESNO.TabIndex = 2;
